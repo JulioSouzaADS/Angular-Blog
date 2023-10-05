@@ -9,6 +9,17 @@
     align-items: center;
 }
 
+.container__content p {
+    width: 80%;
+    font-style: bold;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .content__cover img {
     border: 2px solid white;
     border-radius: 10px;
@@ -24,4 +35,31 @@
 .content__description {
   color: grey;  
   margin-top: 25px;
+}
+
+.content__description a{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .content__cover img {
+        width: 80%;
+        min-width: unset;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__content {
+        margin-top: 0;
+    }
+    .content__cover img {
+        width: 100%;
+        border-radius: 0;
+        border: none;
+    }
+    .content__description {
+        margin-top: 10px;
+    }
 }

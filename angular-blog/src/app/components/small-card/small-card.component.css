@@ -4,6 +4,7 @@
     width: 700px;
     margin-bottom: 15px; 
     border-radius: 10px;
+    box-shadow: 10px 5px 5px rgb(254, 251, 251);
 }
 
 .container__small-card-content{
@@ -13,6 +14,7 @@
 
 .small-card-photo > img {
  width: 200px;
+ height: 150px;
  min-width: 200px;
  margin-right: 20px;
 }
@@ -25,4 +27,37 @@
 
 .container__small-card__separator{
     margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container__small-card {
+        width: 100%; /* Tornar o cartão 100% da largura da tela */
+    }
+
+    .small-card-title h1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .small-card-photo > img {
+        width: 50vw; /* Tornar a imagem 100% da largura do contêiner */
+        height: 200px; /* Permitir que a altura se ajuste automaticamente */
+        min-width: unset; /* Remover a largura mínima */
+        margin-right: auto; /* Remover a margem à direita */
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container__small-card {
+        margin-bottom: 10px; /* Reduzir a margem inferior */
+    }
+    
+    .small-card-title {
+        text-align: center; /* Centralizar o título */
+    }
+    
+    .container__small-card__separator {
+        margin-top: 5px; /* Reduzir a margem superior do separador */
+    }
 }

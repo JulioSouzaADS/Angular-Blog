@@ -2,6 +2,8 @@
 .container__menu-bar > ul{
     display: flex;
     flex-direction: row;
+    font-weight: 700;
+    font-size: 15px;
 }
 
 .container__menu-bar >ul > li {
