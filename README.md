@@ -1,9 +1,6 @@
 # Angular-Blog
 Blog Project with Angular
 
-Claro, aqui está o arquivo `README.md` com formatação Markdown:
-
-```markdown
 # Meu Projeto Angular
 
 Este é um projeto Angular que serve como base para o meu blog sobre Ichigo Kurosaki e suas formas de evolução.
